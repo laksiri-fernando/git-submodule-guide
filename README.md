@@ -41,7 +41,20 @@ git push -u origin main
 
 ```
 
-4. Add submodule
+5. Add submodule
 ```bash
 # git submodule add <repo-url> <folder>
 git submodule add git@github.com:laksiri-fernando/git-submodule-sub.git
+```
+
+Git will:
+
+- Clone the repository
+- Create .gitmodules
+- Add special entry in Git index
+
+6. Commit the submodule
+```bash
+git add .
+git commit -m "Added git-submodule-sub submodule"
+```
