@@ -144,3 +144,19 @@ In main repo:
 git add git-submodule-sub
 git commit -m "Updated submodule version"
 ```
+
+VERY IMPORTANT:
+
+You commit the NEW submodule commit pointer.
+
+## 12. Other Developers Pulling Changes
+
+In main repo:
+
+```bash
+git pull
+git submodule update --init --recursive
+```
+
+to move submodule to correct commit.
+
