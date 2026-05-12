@@ -451,7 +451,7 @@ git submodule update --init --recursive
 Suppose your architecture:
 
 ```text
-KingslakeBlue/
+ABCSolutions/
 ├── apigw/
 ├── hrm/
 ├── tms/
