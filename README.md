@@ -1,6 +1,33 @@
 # GIT Submodule Guide
 
+Git submodules allow you to include one Git repository inside another Git repository.
+
+This is useful when:
+
+- Multiple projects share common code
+- You want to keep dependencies in separate repositories
+- You want independent versioning for components
+- You want to reuse libraries/modules across projects
+
+## What Is a Git Submodule
+
+A submodule is:
+
+> A Git repository embedded inside another Git repository.
+
+Example:
+
+```bash
+Main Project: Super Project (git-submodule-guide)
+│
+├── frontend/
+├── backend/
+├── git-submodule-sub/   <-- Git Submodule
+└── .gitmodules
+```
 ## 1. Create the submodule (git-submodule-sub)
+
+Create the submodule repo in github
 
 ## 2. Setup submodule for the guide
 ```bash
@@ -21,7 +48,9 @@ git remote add origin git@github.com:laksiri-fernando/git-submodule-sub.git
 git push -u origin main
 ```
 
-## 3. Create the main repo in github (git-submodule-guide)
+## 3. Create the main repo (git-submodule-guide)
+
+Create the main repo in github
 
 ## 4. Setup main repo for the guide
 ```bash
